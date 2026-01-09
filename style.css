@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #FFF;
+	overflow: scroll;
+}
+
+#container {
+	background-color: white;
+}
+
+/* Color changing Header Background */
+@keyframes header {
+    0% {background-color: pink;}
+    7% {background-color: red;}
+    21% {background-color: orange;}
+    35% {background-color: yellow;}
+    50% {background-color: green;}
+    64% {background-color: blue;}
+    78% {background-color: indigo;}
+    93% {background-color: purple;}
+    100% {background-color: pink;}
+    
+}
+
+#header {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: header;
+	font-family: "Times New Roman", Georgia, sans-serif;
+	font-size: 150%;
+	font-style: italic;
+	margin: 0;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+                                                    /*Navigation*/
+#nav {
+	background-color: #333;
+	font-family: Raleway, "Times New Roman", "Georgia", sans-serif;
+	width: 100%;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a, #nav button {
+    border: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    padding: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: #111;
+}
+
+                                                    /*Dropdown Navigation Bars*/
+
+/* Dropdown Button */
+#nav .calcDrop {
+	background-color: #333;
+	border: none;
+    color: white;
+    cursor: pointer;
+    font-family: Raleway, 'Lato', "Georgia", sans-serif;
+    font-size: 16px;
+    padding: 16px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+#nav .calculation {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+#nav .shapes {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+#nav .shapes a {
+	display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+#nav .shapes a:hover {
+	background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+#nav .calculation:hover .shapes {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#nav .calculation:hover .calcDrop {
+    background-color: #111;
+}
+
+                                                    /*Content*/
+
+#content {
+    background: url("https://thumbs.dreamstime.com/x/math-blackboard-14092099.jpg") repeat top center;
+	padding: 10% 15%;
+}
+
+#innercontent {
+    padding: 5%;
+}
+
+h2 {
+	font-size: 300%;
+	margin: 50px auto;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+h3 {
+    font-size: 250%;
+    margin: 50px auto;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#content p {
+    line-height: 1.3em;
+	margin: 50px auto;
+	text-align: center;
+	width: 75%;
+}  
+
+#content li {
+    line-height: 1.5em;
+    list-style-type: none;
+}
+
+#content a:hover {
+    color: #e5e4e2;
+}
+
+#innercontent p {
+    font-size: 150%;
+}
+
+#homecontent, #homecontent li a, #innercontent p, #innercontent a, #vocabulary, h2, h3 {
+    color: #eee;
+	font-family: 'Permanent Marker', "Times New Roman", Georgia, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+                                                    /*Inner Content*/
+
+#homecontent, #innercontent {
+    background-color: #6ca;
+    border: 10px solid lightgray;
+    border-radius: 30px;
+    box-shadow: 0px 32px 64px 0px rgba(0,0,0,0.2);
+}
+
+.shape {
+    display: block;
+    filter: grayscale(100%);
+    height: 30%;
+    margin: 50px auto;
+    width: 30%;
+}
+
+                                                    /*Formulas Table Content*/
+
+#innercontent table {
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    height: 40%;
+    margin: 50px auto;
+    overflow-y: scroll;
+    position: static;
+    width: 80%;
+}
+
+#innercontent thead th {
+    background: #88CCF1;
+    color: #fff;
+    font-size: 150%;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#innercontent tr {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+}
+
+#innercontent th, #innercontent td {
+    font-family: Raleway, 'Lato', "Georgia", sans-serif;
+    font-weight: normal;
+    padding: 10px 20px;
+    text-align: left;
+    width: 33.3333%;
+}
+
+#innercontent table ul li {
+    list-style-type: none;
+}
+
+                                                    /*Footer*/
+
+#footer {
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+	padding: 15px;
+	text-align: center;
+}
